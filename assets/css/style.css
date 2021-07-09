@@ -10739,6 +10739,10 @@ textarea.form-control-lg {
     opacity: 0;
   }
 }
+a {
+  text-decoration: none;
+}
+
 .btn-rounded {
   position: relative;
   padding: 0.9372rem 4.375rem 0.9372rem 1.25rem;
@@ -10746,11 +10750,6 @@ textarea.form-control-lg {
   margin: 0;
   border: 0.1 solid rgba(255, 255, 255, 0.6);
   background-color: #fff;
-}
-@media (max-width: 575.98px) {
-  .btn-rounded {
-    display: none;
-  }
 }
 .btn-rounded span {
   position: absolute;
@@ -10877,8 +10876,11 @@ textarea.form-control-lg {
   text-align: center;
   position: relative;
 }
-.campanies__logo-box img {
+.campanies__logo-box a img {
   height: 100%;
+}
+.campanies__logo-box a img:hover {
+  filter: opacity(50%);
 }
 
 /*# sourceMappingURL=style.css.map */
