@@ -10862,6 +10862,10 @@ textarea.form-control-lg {
   animation-delay: 1.5s;
 }
 
+.tittle-size {
+  font-size: 33px;
+}
+
 .campanies {
   padding: 0 0 5rem 0;
 }
