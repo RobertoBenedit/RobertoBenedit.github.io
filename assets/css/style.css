@@ -10817,6 +10817,34 @@ a {
   background-color: #9926f0;
 }
 
+.display-3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 4.5rem;
+  color: #9926f0;
+}
+@media (max-width: 991.98px) {
+  .display-3 {
+    font-size: 2.5rem;
+    color: #9926f0;
+  }
+}
+.display-3--title {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  display: inline-block;
+  background-image: linear-gradient(to right, .display-3--title primary, .display-3--title secondary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-right {
+  border-right: 0.1rem solid #dee2e6;
+  height: 100%;
+}
+
 .menu {
   background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
 }
@@ -10861,10 +10889,6 @@ a {
   animation-delay: 1.5s;
 }
 
-.tittle-size {
-  font-size: 33px;
-}
-
 .campanies {
   padding: 0 0 5rem 0;
 }
@@ -10881,6 +10905,19 @@ a {
 }
 .campanies__logo-box a img:hover {
   filter: opacity(50%);
+}
+
+.services {
+  position: relative;
+  padding: 1rem 0;
+}
+.services__content {
+  padding: 1rem;
+  margin-top: 1.5rem;
+}
+.services__content .icon {
+  font-size: 2.5rem;
+  color: #9926f0;
 }
 
 /*# sourceMappingURL=style.css.map */
