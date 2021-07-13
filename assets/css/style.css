@@ -10840,6 +10840,12 @@ a {
     color: #9926f0;
   }
 }
+@media (max-width: 991.98px) {
+  .display-3 {
+    font-size: 3.5rem;
+    color: #9926f0;
+  }
+}
 
 .border-right {
   border-right: 0.1rem solid #dee2e6;
