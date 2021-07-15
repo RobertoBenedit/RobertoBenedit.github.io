@@ -10750,6 +10750,7 @@ a {
   margin: 0;
   border: 0.1 solid rgba(255, 255, 255, 0.6);
   background-color: #fff;
+  color: #9926f0;
 }
 .btn-rounded span {
   position: absolute;
@@ -10987,7 +10988,6 @@ a {
 }
 .testimonials__name h3 {
   padding-top: 0.8rem;
-  text-transform: lowercase;
 }
 
 .portfolio {
