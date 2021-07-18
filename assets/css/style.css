@@ -10918,6 +10918,11 @@ a {
 .campanies__logo-box a img:hover {
   filter: opacity(50%);
 }
+.campanies .partners-title {
+  padding-top: 8rem;
+  font-size: 3.5rem;
+  font-weight: 600;
+}
 
 .services {
   position: relative;
@@ -10954,6 +10959,7 @@ a {
 }
 .services h1 {
   font-size: 2rem;
+  padding-top: 7rem;
 }
 @media (min-width: 992px) {
   .services h1 {
@@ -11011,7 +11017,7 @@ a {
 }
 
 .portfolio {
-  padding: 4rem 0;
+  padding: 5rem 0;
 }
 .portfolio button {
   text-transform: capitalize;
@@ -11063,7 +11069,7 @@ a {
 }
 
 .get-started {
-  padding: 4rem 0;
+  padding: 8rem 0;
   background-color: rgba(153, 38, 240, 0.2);
 }
 
