@@ -11072,6 +11072,14 @@ a {
   padding: 8rem 0;
   background-color: rgba(153, 38, 240, 0.2);
 }
+.get-started h1 {
+  font-size: 3.5rem;
+}
+@media (min-width: 992px) {
+  .get-started h1 {
+    font-size: 4.5rem;
+  }
+}
 
 .cta-info {
   padding: 3rem;
@@ -11130,7 +11138,7 @@ h5 {
 }
 .contact-box__icon {
   width: 2rem;
-  stroke: #9926f0;
+  stroke: #fff;
   padding-top: 0.5rem;
 }
 @media (min-width: 576px) {
