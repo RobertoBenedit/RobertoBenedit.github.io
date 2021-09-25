@@ -58,7 +58,7 @@
           <li class="nav-item">
             <a class="nav-link" href="#services">¿Qué hacemos?</a>
           <li class="nav-item">
-            <a class="nav-link" href="https://rocomunica.tiendup.com/" target="blanck">Cursos</a>
+            <a class="nav-link" href="../bootstrap-v5/costos.html" target="blanck">Trantanos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#testimonials">Comunidad</a>
@@ -130,6 +130,25 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,224L34.3,186.7C68.6,149,137,75,206,80C274.3,85,343,171,411,192C480,213,549,171,617,144C685.7,117,754,107,823,112C891.4,117,960,139,1029,170.7C1097.1,203,1166,245,1234,224C1302.9,203,1371,117,1406,74.7L1440,32L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
   </section>
 
+
+
+
+  <Div class="container">
+
+
+    <h1 class="display-3" style="color:rgb(155, 12, 155); font-size: 3rem;">Escuchas musica mientras nos visitas!</h1>
+    <h1 class="display-3 mb-5" style="color:rgb(155, 12, 155)">play!</h1>
+
+    <iframe src="https://open.spotify.com/embed/playlist/5dipOkvDwBGM4OdtanVY7i" width="70%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+  </Div>
+
+
+    
+
+ 
+
+
   <!-- START SECTION 3 - CAMPANIES -->
 
   <section id="campanies" class="campanies">
@@ -140,8 +159,10 @@
         <div class="heading-line mb-5"></div>
       </div>
     </div>
+    
 
     <!-- START THE CAMPANIES CONTENT  -->
+
 
     <div class="container">
       <div class="row">
@@ -836,7 +857,8 @@
         <div class="col-12 col-lg-6 bg-white shadow p-3">
           <div class="form w-100 pb-2">
             <h5 class="display-3--tittle mb-5">Nuestra casilla de mensajes:</h5>
-            <form action="#" class="row ">
+            <form id="form" action="#" class="row " action="https://formspree.io/f/mvodlnnr"
+            method="POST">
               <div class="col-lg-6 col-md-6 mb-3"><input type="text" placeholder="Nombre" id="inputFistName" class="shadow form-control form-control-lg">
               </div>
               <div class="col-lg-6 col-md-6 mb-3"><input type="text" placeholder="Apellido" id="inputFistName" class="shadow form-control form-control-lg">
@@ -1039,6 +1061,8 @@
       'source': 'youtube', //vimeo, youtube or local
       'width': 900,
       'autoPlayVideos':true,
+
+      
             
     });</script>
 
@@ -1049,6 +1073,28 @@
     <!-- Bootstrap -->
 
     <script src="/assets/js/bootstrap.bundle.js"></script>
+
+    <script src="https://sdk.scdn.co/spotify-player.js"></script>
+    <script>
+        window.onSpotifyWebPlaybackSDKReady = () => {
+        const userAccessToken = "[access token]";
+        const webPlayback = new Spotify.Player({
+        name: "Spotify Web Playback SDK",
+        getOAuthToken: callback => { callback(userAccessToken)}
+        });
+        webPlayback.connect();
+        };
+    </script>
+
+    <script>
+      const form = document.querySelector('#form')
+      form.addEventListener('submit', handleSubmit)
+      function handleSubmit(event) {
+        event.preventDefault()
+    </script>
+
+
+
 
 </body>
 </html>
